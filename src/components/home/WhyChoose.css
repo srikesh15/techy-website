@@ -1,0 +1,36 @@
+.why-choose {
+  padding: 100px 8%;
+  background: #ffffff;
+}
+
+.why-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.why-header p {
+  color: #2563eb;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.why-header h2 {
+  font-size: 2.6rem;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+.why-header span {
+  display: block;
+  max-width: 700px;
+  margin: auto;
+  color: #6b7280;
+  line-height: 1.7;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
