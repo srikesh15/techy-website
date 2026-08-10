@@ -4,7 +4,7 @@ import services from "../../data/services";
 
 function Services() {
   return (
-    <section className="services-section">
+    <section id="services" className="services-section">
       <div className="services-header">
         <p>Our Services</p>
         <h2>Solutions We Provide</h2>

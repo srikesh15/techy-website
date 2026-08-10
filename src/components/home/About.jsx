@@ -9,7 +9,7 @@ const highlights = [
 
 function About() {
   return (
-    <section className="about">
+    <section id="about" className="about">
       <div className="about-content">
         <p className="about-tag">ABOUT US</p>
 
