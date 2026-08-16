@@ -24,3 +24,7 @@ img {
   max-width: 100%;
   display: block;
 }
+
+section {
+  scroll-margin-top: 80px;
+}

@@ -1,51 +1,53 @@
+import { useState } from "react";
 import "./Navbar.css";
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
 
-
-const navItems = [
-  {
-    id: 1,
-    title: "Home",
-    link: "#",
-  },
-  {
-    id: 2,
-    title: "About",
-    link: "#",
-  },
-  {
-    id: 3,
-    title: "Services",
-    link: "#",
-  },
-  {
-    id: 4,
-    title: "Projects",
-    link: "#",
-  },
-  {
-    id: 5,
-    title: "Contact",
-    link: "#",
-  },
-];
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
 
   return (
     <nav className="navbar">
-      <div className="logo">
-        <h2>Techy</h2>
+      <div className="navbar-container">
+        <a href="#home" className="navbar-logo" onClick={closeMenu}>
+          Techy
+        </a>
+
+        <button
+          className="menu-toggle"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle navigation menu"
+          aria-expanded={menuOpen}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div className={`navbar-links ${menuOpen ? "active" : ""}`}>
+          <a href="#home" onClick={closeMenu}>
+            Home
+          </a>
+
+          <a href="#about" onClick={closeMenu}>
+            About
+          </a>
+
+          <a href="#services" onClick={closeMenu}>
+            Services
+          </a>
+
+          <a href="#projects" onClick={closeMenu}>
+            Projects
+          </a>
+
+          <a href="#contact" onClick={closeMenu}>
+            Contact
+          </a>
+        </div>
       </div>
-
-      <ul className="nav-links">
-        {navItems.map((item) => (
-          <li key={item.id}>
-            <a href={item.link}>{item.title}</a>
-          </li>
-        ))}
-      </ul>
-
-      <button className="nav-btn">Get Started</button>
     </nav>
   );
 }
