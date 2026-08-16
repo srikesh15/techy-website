@@ -34,3 +34,18 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
+
+@media (max-width: 768px) {
+  .testimonials-section {
+    padding: 70px 6%;
+  }
+
+  .testimonials-header h2 {
+    font-size: 2rem;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

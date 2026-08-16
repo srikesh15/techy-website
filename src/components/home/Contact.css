@@ -120,3 +120,22 @@
 .contact-btn:hover {
   background: #1d4ed8;
 }
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 70px 6%;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-info h2 {
+    font-size: 2rem;
+  }
+
+  .contact-form {
+    padding: 25px;
+  }
+}

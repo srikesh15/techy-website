@@ -63,3 +63,19 @@
   color: #9ca3af;
   margin: 0;
 }
+
+@media (max-width: 768px) {
+  .footer {
+    padding-top: 50px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 0 6% 40px;
+  }
+
+  .footer-brand p {
+    max-width: 100%;
+  }
+}
