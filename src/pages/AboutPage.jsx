@@ -1,12 +1,7 @@
+import About from "../components/home/About";
+
 function AboutPage() {
-  return (
-    <main>
-      <h1>About Techy</h1>
-      <p>
-        Learn more about Techy and how we build digital solutions.
-      </p>
-    </main>
-  );
+  return <About/>;
 }
 
 export default AboutPage;
