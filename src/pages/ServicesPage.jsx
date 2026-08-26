@@ -4,10 +4,10 @@ import Services from "../components/home/Services";
 function ServicesPage() {
   return (
     <>
-      <PageHero
+      {/* <PageHero
         title="Our Services"
         description="Explore the digital solutions we provide to help businesses move forward."
-      />
+      /> */}
 
       <Services />
     </>

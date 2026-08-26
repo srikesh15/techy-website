@@ -4,10 +4,10 @@ import Projects from "../components/home/Projects";
 function ProjectsPage() {
   return (
     <>
-      <PageHero
+      {/* <PageHero
         title="Our Projects"
         description="Take a look at some of the digital experiences and solutions we've built."
-      />
+      /> */}
 
       <Projects />
     </>

@@ -8,6 +8,7 @@
   text-align: center;
 
   padding: 80px 6%;
+  box-sizing: border-box;
 
   background: #f3f4f6;
 }
@@ -17,14 +18,20 @@
 }
 
 .page-hero h1 {
+  margin: 0 0 20px;
+
   font-size: 3rem;
-  margin-bottom: 20px;
+  line-height: 1.2;
+
   color: #111827;
 }
 
 .page-hero p {
+  margin: 0;
+
   font-size: 1.1rem;
   line-height: 1.7;
+
   color: #6b7280;
 }
 
@@ -40,5 +47,21 @@
 
   .page-hero p {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-hero {
+    min-height: 230px;
+    padding: 50px 6%;
+  }
+
+  .page-hero h1 {
+    font-size: 1.9rem;
+  }
+
+  .page-hero p {
+    font-size: 0.95rem;
+    line-height: 1.6;
   }
 }
