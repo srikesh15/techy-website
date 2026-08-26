@@ -7,29 +7,32 @@ function Contact() {
     email: "",
     message: "",
   });
+const [submitted, setSubmitted] = useState(false);
 
-  const handleChange = (event) => {
-    const { name, value } = event.target;
+ const handleChange = (event) => {
+  const { name, value } = event.target;
 
-    setFormData((previousData) => ({
-      ...previousData,
-      [name]: value,
-    }));
-  };
+  setFormData((previousData) => ({
+    ...previousData,
+    [name]: value,
+  }));
+
+  setSubmitted(false);
+};
 
   const handleSubmit = (event) => {
-    event.preventDefault();
+  event.preventDefault();
 
-    console.log("Form submitted:", formData);
+  console.log("Form submitted:", formData);
 
-    alert("Thank you! We will get back to you soon.");
+  setSubmitted(true);
 
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-    });
-  };
+  setFormData({
+    name: "",
+    email: "",
+    message: "",
+  });
+};
 
   return (
     <section id="contact" className="contact-section">
@@ -44,6 +47,8 @@ function Contact() {
             Have an idea for your next digital product? Tell us about it and
             let's turn your idea into a powerful solution.
           </p>
+
+
 
           <div className="contact-details">
             <div>
@@ -62,7 +67,12 @@ function Contact() {
             </div>
           </div>
         </div>
-
+      <div>
+      {submitted && (
+            <p className="form-success">
+              Thank you! Your message has been sent successfully.
+            </p>
+          )}
         <form className="contact-form" onSubmit={handleSubmit}>
 
           <div className="form-group">
@@ -112,7 +122,7 @@ function Contact() {
           </button>
 
         </form>
-
+        </div>
       </div>
     </section>
   );

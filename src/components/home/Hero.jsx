@@ -1,24 +1,30 @@
+import { Link } from "react-router-dom";
 import "./Hero.css";
 
 function Hero() {
   return (
-    <section id="home" className="hero">
+    <section className="hero">
       <div className="hero-content">
-        <p className="hero-tag">🚀 Welcome to Techy</p>
+        <p className="hero-subtitle">DIGITAL SOLUTIONS</p>
 
         <h1>
-          Building Digital Solutions with
-          <span> Techy</span>
+          Building Digital
+          <span> Experiences That Matter</span>
         </h1>
 
         <p className="hero-description">
-          We help startups and businesses build modern websites,
-          mobile applications, and scalable digital products.
+          We create modern websites, applications, and digital
+          solutions that help businesses grow.
         </p>
 
         <div className="hero-buttons">
-          <button className="primary-btn">Get Started</button>
-          <button className="secondary-btn">Our Services</button>
+          <Link to="/contact" className="hero-primary-btn">
+            Get Started
+          </Link>
+
+          <Link to="/projects" className="hero-secondary-btn">
+            View Projects
+          </Link>
         </div>
       </div>
     </section>

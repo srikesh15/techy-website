@@ -8,6 +8,7 @@ import AboutPage from "./pages/AboutPage";
 import ServicesPage from './pages/ServicesPage';
 import ProjectsPage from "./pages/ProjectsPage";
 import ContactPage from "./pages/ContactPage";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
         <Route path="/projects" element={<ProjectsPage />} />
 
         <Route path="/contact" element={<ContactPage />} />
+
+        <Route path="*" element={<NotFound />} />
       </Routes>
 
       <Footer />

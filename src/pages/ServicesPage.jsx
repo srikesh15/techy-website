@@ -1,8 +1,16 @@
-import Services from '../components/home/Services';
+import PageHero from "../components/common/PageHero";
+import Services from "../components/home/Services";
 
 function ServicesPage() {
   return (
-    <Services/>
+    <>
+      <PageHero
+        title="Our Services"
+        description="Explore the digital solutions we provide to help businesses move forward."
+      />
+
+      <Services />
+    </>
   );
 }
 

@@ -41,32 +41,41 @@
   gap: 20px;
 }
 
-.primary-btn,
-.secondary-btn {
-  padding: 14px 28px;
-  font-size: 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
+.hero-primary-btn,
+.hero-secondary-btn {
+  display: inline-block;
+  padding: 13px 26px;
+  border-radius: 6px;
+
+  text-decoration: none;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
 }
 
-.primary-btn {
+.hero-primary-btn {
   background: #2563eb;
   color: white;
   border: none;
 }
 
-.primary-btn:hover {
+.hero-primary-btn:hover {
   background: #1d4ed8;
 }
 
-.secondary-btn {
+.hero-secondary-btn {
   background: transparent;
   border: 2px solid #2563eb;
   color: #2563eb;
 }
 
-.secondary-btn:hover {
+.hero-secondary-btn:hover {
   background: #2563eb;
   color: white;
 }
+
+
+
+
+
+

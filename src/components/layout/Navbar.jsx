@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
@@ -13,7 +13,11 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-container">
 
-        <Link to="/" className="navbar-logo" onClick={closeMenu}>
+        <Link
+          to="/"
+          className="navbar-logo"
+          onClick={closeMenu}
+        >
           Techy
         </Link>
 
@@ -27,27 +31,59 @@ function Navbar() {
         </button>
 
         <div className={`navbar-links ${menuOpen ? "active" : ""}`}>
-          <Link to="/" onClick={closeMenu}>
+
+          <NavLink
+            to="/"
+            end
+            onClick={closeMenu}
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+          >
             Home
-          </Link>
+          </NavLink>
 
-          <Link to="/about" onClick={closeMenu}>
+          <NavLink
+            to="/about"
+            onClick={closeMenu}
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+          >
             About
-          </Link>
+          </NavLink>
 
-          <Link to="/services" onClick={closeMenu}>
+          <NavLink
+            to="/services"
+            onClick={closeMenu}
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+          >
             Services
-          </Link>
+          </NavLink>
 
-          <Link to="/projects" onClick={closeMenu}>
+          <NavLink
+            to="/projects"
+            onClick={closeMenu}
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+          >
             Projects
-          </Link>
+          </NavLink>
 
-          <Link to="/contact" onClick={closeMenu}>
+          <NavLink
+            to="/contact"
+            onClick={closeMenu}
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+          >
             Contact
-          </Link>
-        </div>
+          </NavLink>
 
+        </div>
       </div>
     </nav>
   );

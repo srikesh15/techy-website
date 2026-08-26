@@ -43,6 +43,9 @@
 .navbar-links a:hover {
   color: #2563eb;
 }
+.navbar-links a.active {
+  color: #2563eb;
+}
 
 /* Hamburger */
 

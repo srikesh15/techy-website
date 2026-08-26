@@ -1,8 +1,16 @@
-import Contact from '../components/home/Contact';
+import PageHero from "../components/common/PageHero";
+import Contact from "../components/home/Contact";
 
 function ContactPage() {
   return (
-    <Contact/>
+    <>
+      <PageHero
+        title="Contact Techy"
+        description="Have an idea or project in mind? We'd love to hear from you."
+      />
+
+      <Contact />
+    </>
   );
 }
 
