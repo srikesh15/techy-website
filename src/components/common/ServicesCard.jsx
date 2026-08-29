@@ -1,14 +1,26 @@
 import "./ServicesCard.css";
 
-function ServicesCard({ icon, title, description }) {
+function ServicesCard({
+  id,
+  icon,
+  title,
+  description,
+}) {
   return (
-    <div className="service-card">
-      <div className="service-icon">{icon}</div>
+    <article
+      id={id}
+      className="service-card"
+    >
+      <div className="service-icon">
+        {icon}
+      </div>
 
-      <h3>{title}</h3>
+      <div className="service-content">
+        <h3>{title}</h3>
 
-      <p>{description}</p>
-    </div>
+        <p>{description}</p>
+      </div>
+    </article>
   );
 }
 
