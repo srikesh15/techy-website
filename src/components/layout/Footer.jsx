@@ -26,25 +26,40 @@ function Footer() {
         <div className="footer-column">
           <h3>Services</h3>
 
-          <Link to="/services">Web Development</Link>
-          <Link to="/services">Mobile Apps</Link>
-          <Link to="/services">Cloud Solutions</Link>
-          <Link to="/services">AI Solutions</Link>
+          <Link to="/services#web-development">Web Development</Link>
+          <Link to="/services#mobile-app-development">Mobile App Development</Link>
+          <Link to="/services#cloud-solutions">Cloud Solutions</Link>
+          <Link to="/services#ai-solutions">AI Solutions</Link>
+          <Link to="/services#ui-ux-design">UI UX Design</Link>
+          <Link to="/services#cyber-security">Cyber Security</Link>
+
         </div>
 
         <div className="footer-column">
           <h3>Follow Us</h3>
 
           <div className="footer-socials">
-            <a href="#" aria-label="LinkedIn">
+            <a
+              href="#"
+              onClick={(event) => event.preventDefault()}
+              aria-label="LinkedIn"
+            >
               LinkedIn
             </a>
 
-            <a href="#" aria-label="GitHub">
+            <a
+              href="#"
+              onClick={(event) => event.preventDefault()}
+              aria-label="GitHub"
+            >
               GitHub
             </a>
 
-            <a href="#" aria-label="Instagram">
+            <a
+              href="#"
+              onClick={(event) => event.preventDefault()}
+              aria-label="Instagram"
+            >
               Instagram
             </a>
           </div>

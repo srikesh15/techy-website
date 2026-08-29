@@ -10,11 +10,13 @@ import ProjectsPage from "./pages/ProjectsPage";
 import ContactPage from "./pages/ContactPage";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/common/ScrollToTop";
+import ScrollToHash from "./components/common/ScrollToHash";
 
 function App() {
   return (
     <BrowserRouter>
       <ScrollToTop/>
+      <ScrollToHash/>
       <Navbar />
 
       <Routes>

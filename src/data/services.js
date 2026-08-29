@@ -30,7 +30,7 @@ const services = [
   {
     id: 5,
     icon: "🎨",
-    title: "UI / UX Design",
+    title: "UI UX Design",
     description:
       "Beautiful, intuitive, and user-friendly digital experiences.",
   },

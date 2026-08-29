@@ -6,9 +6,10 @@ function ServicesCard({
   title,
   description,
 }) {
+  const serviceId = title.toLowerCase().replace(/\s+/g, "-");
   return (
     <article
-      id={id}
+      id={serviceId}
       className="service-card"
     >
       <div className="service-icon">
