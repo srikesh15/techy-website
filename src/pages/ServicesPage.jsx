@@ -1,15 +1,28 @@
 import PageHero from "../components/common/PageHero";
-import Services from "../components/home/Services";
+import ServicesCard from "../components/common/ServicesCard";
+import services from "../data/services";
+import "./ServicesPage.css";
 
 function ServicesPage() {
   return (
     <>
-      {/* <PageHero
+      <PageHero
         title="Our Services"
         description="Explore the digital solutions we provide to help businesses move forward."
-      /> */}
+      />
 
-      <Services />
+      <section className="services-page-section">
+        <div className="services-page-grid">
+          {services.map((service) => (
+            <ServicesCard
+              key={service.id}
+              icon={service.icon}
+              title={service.title}
+              description={service.description}
+            />
+          ))}
+        </div>
+      </section>
     </>
   );
 }
