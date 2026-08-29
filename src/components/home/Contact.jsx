@@ -23,7 +23,7 @@ const [submitted, setSubmitted] = useState(false);
   const handleSubmit = (event) => {
   event.preventDefault();
 
-  console.log("Form submitted:", formData);
+  // console.log("Form submitted:", formData);
 
   setSubmitted(true);
 
