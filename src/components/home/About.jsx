@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 import "./About.css";
-import about from '../../assets/about.avif';
+import about from "../../assets/about.avif";
 
 const highlights = [
-  "5+ Years of Experience",
-  "120+ Successful Projects",
-  "50+ Happy Clients",
+  "Modern and responsive solutions",
+  "Business-focused digital products",
+  "Reliable and scalable technology",
 ];
 
 function About() {
@@ -18,10 +19,9 @@ function About() {
         </h2>
 
         <p className="about-description">
-          At <strong>Techy</strong>, we specialize in building modern websites,
-          mobile applications, cloud-based solutions, and AI-powered software.
-          Our mission is to transform innovative ideas into reliable digital
-          products that drive business success.
+          At <strong>Techy</strong>, we create modern digital experiences
+          that help businesses establish their online presence, improve
+          customer engagement, and grow.
         </p>
 
         <ul className="about-list">
@@ -30,7 +30,9 @@ function About() {
           ))}
         </ul>
 
-        <button className="about-btn">Learn More</button>
+        <Link to="/about" className="about-btn">
+          Learn More
+        </Link>
       </div>
 
       <div className="about-image">
